@@ -32,4 +32,4 @@ RUN pip install --upgrade pip
 
 RUN pip install git+https://github.com/developmentseed/landsat-util.git
 
-RUN pip3 install torchvision
+RUN pip3 install torchvision==0.3.1
