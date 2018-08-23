@@ -28,3 +28,25 @@ Using 12-band satellite imagery in custom-architecture convolutional neural netw
 6. Gini index (a measure of wealth inequality)
 
 Our model architecture also allows us to view which bands are most important (i.e. have the highest weights), so we used these bands via band math in QGIS to prototype social indices (analagous to more traditional indices such as vegetation indices).
+
+### What does Sentinel-2 imagery look like?
+
+Here is the 10m resolution, blue-band imagery for Albany, NY.
+
+![Sentinel-2 imagery](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/example-model-input.png)
+
+### How good are the predictions?
+
+For the most part, we got impressive results. Below is the plot of predicted population density against true population density, including both training and test set (out-of-sample) examples:
+
+![model results](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/example-model-performance-pop.png)
+
+### Can we create a remote sensing index from this?
+
+As a matter of fact we can! Our model architecture is design such that we can a idea of how important individual spectral bands are in influencing the prediction. We take those important bands and do some band math in QGIS and get the following index image:
+
+![index results](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/evaluating-index.png)
+
+For reference, this is the RGB view:
+
+![rgb reference](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/evaluating-RGB.png)
