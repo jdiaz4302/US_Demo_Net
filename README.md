@@ -1,6 +1,9 @@
 # Demographics from Space!
 
-A Sentinel-2 based CNN to predict the demographics of US capital cities and to determine spectral bands of demographic importance
+#### A project by Jeremy Diaz (https://github.com/jdiaz4302) and Ellen Considine (https://github.com/EllenConsidine)
+##### Final project for GEOG/GEOL 4093/5093 - Remote Sensing of the Environment
+
+<br>
 
 ### Why are we doing this?
 
