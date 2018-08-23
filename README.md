@@ -43,10 +43,16 @@ For the most part, we got impressive results. Below is the plot of predicted pop
 
 ### Can we create a remote sensing index from this?
 
-As a matter of fact we can! Our model architecture is design such that we can a idea of how important individual spectral bands are in influencing the prediction. We take those important bands and do some band math in QGIS and get the following index image:
+As a matter of fact we can! Our model architecture is designed such that we can a idea of how important individual spectral bands are in influencing the prediction. We take those important bands and do some band math in QGIS and get the following index image (and a NDVI image on the right for comparison):
 
-![index results](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/evaluating-index.png)
+![index results](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/evaluating-our-index.png) ![NDVI comparison](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/evaluating-NDVI.png)
 
 For reference, this is the RGB view:
 
 ![rgb reference](https://github.com/jdiaz4302/US_Demo_Net/blob/master/README-images/evaluating-RGB.png)
+
+Careful evaluation will reveal that our index highlights the man-made structures and domestic vegetation, while dampening the water and natural vegetation.
+
+### Concluding remarks
+
+Our custom CNN architecture was able to make impressive predictions for demographics of US cities *and* it also allowed us to create a new index (normalized differenced population index) which highlights pixels which positively contribute to expected population density.
